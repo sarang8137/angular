@@ -1,0 +1,29 @@
+<div>
+    <h1 class="text-warning">First Component</h1>
+    <p class="btn btn-danger">this is from first component</p><br><br>
+
+
+    <h2>String Interpolation</h2>
+    <h3>{{name}}</h3>
+    <p>{{students}}</p>
+</div><br><br>
+
+<h3>Property Binding</h3>
+<input type="text" [value]="val" [placeholder]="val2">
+<br><br>
+
+<h3>Event Binding</h3>
+<input type="text" id="ii">
+<button class="btn btn-success" (click)="submit()">submit</button>
+
+<h3>Template Variable</h3>
+<input type="text" #inp>
+<button class="btn btn-success" (click)="new_submit(inp)">submit</button>
+
+
+<h3>Two Way Binding</h3>
+<input type="text" [(ngModel)]="two">
+<p>{{two}}</p>
+
+
+

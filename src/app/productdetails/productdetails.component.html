@@ -1,0 +1,24 @@
+<h1>{{pro.title|uppercase}}</h1>
+<p>{{dd|date:'dd MMMM YYYY'}}</p>
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <div  class="card mx-3 mb-3 bg-light" style="width: 100%; border:2px solid aqua">
+            <img class="card-img-top" src="{{pro.image}}" alt="Card image cap" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">{{pro.title|lowercase}}</h5>
+              <p class="card-text">{{pro.category}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{pro.description}}</li>
+              <li class="list-group-item">{{pro.price|currency:'INR'}}</li>
+              <li class="list-group-item">{{pro.rating.rate}}({{pro.rating.count}})</li>
+            </ul>
+         
+          </div>
+
+
+    </div>
+    <div class="col"></div>
+    {{pro|json}}
+</div>

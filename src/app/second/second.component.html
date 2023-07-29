@@ -1,0 +1,35 @@
+<div class="divbody">
+    <h1 class="text-danger">Second Component</h1>
+    <p class="btn btn-success">this is from second component</p>
+
+    <h1>Directives</h1>
+<h3>ngIf</h3>
+<div *ngIf="val1>val2; else elsedata">
+    if val is True
+</div>
+<ng-template #elsedata>
+     else is Right
+</ng-template><br>
+<h3>ngFor</h3>
+<h4 *ngFor="let i of students">
+    {{i}}
+</h4><br>
+
+<table class="table table-dark container">
+    <thead class="bg-info">
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>position</th>
+    </thead>
+    <tbody *ngFor="let ob of employees">
+        <td>{{ob.id}}</td>
+        <td>{{ob.name}}</td>
+        <td>{{ob.age}}</td>
+        <td>{{ob.position}}</td>
+    </tbody>
+</table>
+
+
+</div>
+
